@@ -1,0 +1,6 @@
+# Use our custom-configured c++ toolchain.
+
+build --incompatible_enable_cc_toolchain_resolution
+
+build --platforms=@com_grail_bazel_toolchain//platforms:linux-armv6k
+build --extra_toolchains=@llvm_toolchain_with_sysroot//:cc-toolchain-armv6k-linux
